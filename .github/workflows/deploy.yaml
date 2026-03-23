@@ -22,6 +22,8 @@ jobs:
         uses: actions/checkout@v5
       - name: install and build with astro
         uses: withastro/action@v5
+        with:
+          package-manager: npm
 
   deploy:
     needs:
